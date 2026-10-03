@@ -1,0 +1,6 @@
+{
+  "name": "SQLQuickPrep - SQL Interview Revision & Practice",
+  "description": "Interactive SQL interview sandbox with live SQLite execution, high-frequency interview challenges, schema inspector, and visual cheat sheet reference grid.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
