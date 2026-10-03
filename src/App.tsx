@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { HeaderNav } from './components/HeaderNav';
+import { ExecutionPrioritySection } from './components/ExecutionPrioritySection';
 import { CheatSheetCard } from './components/CheatSheetCard';
 import { InteractiveRunnerModal } from './components/InteractiveRunnerModal';
 import { CardInfoModal } from './components/CardInfoModal';
@@ -99,6 +100,9 @@ export default function App() {
 
       {/* Main Content Area - 3 Column Layout matching the reference screenshot */}
       <main className="flex-1 max-w-[1550px] w-full mx-auto p-3 sm:p-4">
+        {/* Priority Order & Execution Section at the starting of the page */}
+        <ExecutionPrioritySection />
+
         {filteredCards.length === 0 ? (
           <div className="bg-white border border-[#b8c3cc] rounded-xl p-12 text-center shadow-sm max-w-lg mx-auto mt-10">
             <p className="text-slate-600 font-semibold mb-2">
